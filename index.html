@@ -44,9 +44,9 @@
     // Spawn fruit or Ethereum logo
     function spawnFruit(isEth = false) {
       const x = Math.random() * (canvas.width - 60) + 30;
-      const y = canvas.height + 30;
+      const y = canvas.height - 150; // muncul lebih tinggi
       const vx = (Math.random() - 0.5) * 4;
-      const vy = -Math.random() * 10 - 10;
+      const vy = -Math.random() * 10 - 15; // lebih cepat naik
       fruits.push({
         x, y, vx, vy,
         sliced: false,
